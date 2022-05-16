@@ -16,16 +16,16 @@ const Details: React.FC<PokemonDetails> = ({pokemon}) => {
                                 <span>Height:</span> {pokemon.height}
                             </Text>
                             <Text pb={2}>
-                                <span>Species</span>: {pokemon.species}
+                                <span>Species:</span> {pokemon.species}
                             </Text>
                             <Text pb={2}>
-                                <span>Weight</span>: {pokemon.weight}
+                                <span>Weight:</span> {pokemon.weight}
                             </Text>
                             <Flex pb={2}>
-                                <span>Types : </span>
+                                <span>Types: </span>
                                 {pokemon.types && pokemon.types.map((type: string,  index: number) => (
                                     <Text key={index}>
-                                        { index !== 0 && pokemon.types.length ? "/" + type : type }
+                                        { index !== 0 && pokemon.types.length ? " " + type : type }
                                     </Text>
                                 ))}
                             </Flex>
